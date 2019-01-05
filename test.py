@@ -151,3 +151,62 @@ print(id(s), id(t))
 import keyword
 print(keyword.kwlist)
 
+from decimal import *
+a = Decimal(1234)
+b = Decimal('1234')
+c = Decimal(1.1)
+print(type(a), type(b), type(c))
+print(a, b, c, round(c, 1))
+
+e = 0.0
+for k in range(100000):
+    e += 0.00001
+print(e)
+print(repr(e))
+print(round(e, 1))
+
+e = Decimal('0.0')
+delta = Decimal('0.00001')
+for k in range(100000):
+    e += delta
+print(e)
+
+a = Decimal('35.72')
+b = Decimal('1.73')
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+
+print(a ** 2)
+print(a ** b)
+
+a = Decimal("1.2")
+print(a + 2)
+print(2 + a)
+# print(a + 1.5)
+
+import math, cmath
+d = Decimal('123.456789012345')
+print(math.sqrt(d), cmath.sqrt(-d), d.sqrt(), d.quantize(Decimal('.01'), rounding=ROUND_DOWN))
+
+a = Decimal((1, (1, 4, 7, 5), -2))
+print(a)
+
+print(getcontext())
+print(Decimal(1) / Decimal(7))
+getcontext().prec = 9
+print(Decimal(1) / Decimal(7))
+
+print("---")
+setcontext(ExtendedContext)
+print(Decimal(1) / Decimal(7))
+setcontext(DefaultContext)
+print(Decimal(1) / Decimal(7))
+
+print(2 ** 3) # 2의 3제곱
+print (2 ** 3 ** 2) # 512
+print((2 ** 3) ** 2) # 64
+print(5 % 2) # 1
+print(-5 % 2) # 1
+print (5 ** -2.0) # 0.04
