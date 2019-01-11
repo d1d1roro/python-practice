@@ -55,5 +55,11 @@
 
 # print('py' + 'thon' * 3)
 
-l = [1, 2, 3]
-print(l + l)
+# l = [1, 2, 3]
+# print(l + l)
+
+# i = int(input('자료형: '))
+# print(i, type(i))
+
+# a = input('자료형: ')
+# print(a, type(a))

@@ -1,4 +1,4 @@
-#file test.py
+#file 106-128.py
 
 # while01
 count = 1
@@ -19,7 +19,7 @@ a = 0
 while a < 10:
     a = a + 1 # a += 1
     if a < 3: continue
-    if a > 10: break
+    if a > 9: break
 else:
     print('else block')
 print ('done')
@@ -210,3 +210,12 @@ print((2 ** 3) ** 2) # 64
 print(5 % 2) # 1
 print(-5 % 2) # 1
 print (5 ** -2.0) # 0.04
+
+a = 0
+while a < 10:
+    a = a + 1 # a += 1
+    if a < 3: continue
+    if a > 9: break
+else:
+    print('else block')
+print ('done')
