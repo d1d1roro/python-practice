@@ -45,3 +45,14 @@
 # ws = open('s.txt').read().split()
 # for i in range(0, len(ws), 3):
 #     print(' '.join(ws[i: i+3]))
+
+# lines = ['first line1\n', 'second line1\n', 'third line1\n']
+# f = open('t1.txt', 'w')
+# f.writelines(lines)
+# f.close()
+
+# f = open('t1.txt')
+# text = f.read()
+# print(text.split('\n'))
+# print(len(text.split('\n')))
+# print(text.count('\n'))
