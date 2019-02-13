@@ -166,21 +166,30 @@
 #     pass
 # print(E.__mro__)
 
-class A(object):
-    def save(self):
-        print('A save called')
-class B(A):
-    def save(self):
-        print('B save called')
-        super().save()
-class C(A):
-    def save(self):
-        print('C save called')
-        super().save()
-class D(B, C):
-    def save(self):
-        print('D save called')
-        super().save()
-d = D()
-d.save()
-print(D.__mro__)
+# class A(object):
+#     def save(self):
+#         print('A save called')
+# class B(A):
+#     def save(self):
+#         print('B save called')
+#         super().save()
+# class C(A):
+#     def save(self):
+#         print('C save called')
+#         super().save()
+# class D(B, C):
+#     def save(self):
+#         print('D save called')
+#         super().save()
+# d = D()
+# d.save()
+# print(D.__mro__)
+
+# class Test:
+#     def __init__(self, v):
+#         self.str = v
+#     def __rtruediv__(self, sep):
+#         return self.str.split(sep)
+
+# test = Test('test')
+# print("e" / test)

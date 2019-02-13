@@ -203,6 +203,7 @@
 # d = {}
 # d[h1] = 1
 # print(d[h1])
+# print(list(d.keys()))
 
 # class Truth:
 #     def __init__(self, num):
@@ -211,8 +212,8 @@
 #         return self.num == 10
 # t = Truth(3)
 # print(bool(t))
-# t = 10
-# print(bool(t))
+# t1 = Truth(10)
+# print(bool(t1))
 
 # class Attr:
 #     def __init__(self):
