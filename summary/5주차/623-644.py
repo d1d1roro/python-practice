@@ -23,7 +23,6 @@ ftp.login()
 print('---- getting list')
 ftp.retrlines('LIST')
 print('---- getting dir')
-print(ftp.dir())
+print(ftp.dir()) 
 print('---- getting nlist')
 print(ftp.nlst())
-
